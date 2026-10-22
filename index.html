@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kopi Seduh Jiwa - Cita Rasa Kopi Nusantara</title>
+  <meta name="description" content="Pesan kopi lokal segar, artisan manual brew, dan pastry hangat langsung dari website Kopi Seduh Jiwa." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand-logo">
+        <img id="nav-logo" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=200&q=80" alt="Logo Kopi Seduh Jiwa" />
+        <span class="brand-name">Seduh<span>Jiwa</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#menu">Daftar Menu</a></li>
+        <li><a href="#cerita">Tentang Kami</a></li>
+        <li><a href="#testimoni">Ulasan</a></li>
+      </ul>
+
+      <div class="nav-action">
+        <button class="btn-cart-nav" id="btn-open-cart-nav" aria-label="Buka Keranjang">
+          <i class="bi bi-bag-heart-fill"></i>
+          <span>Keranjang</span>
+          <span class="cart-count-badge" id="nav-cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-tag">
+        <i class="bi bi-fire"></i>
+        <span>100% Biji Kopi Petani Nusantara</span>
+      </div>
+      <h1 class="hero-title">
+        Kehangatan Rasa Otentik, Diseduh <span>Sepenuh Hati</span>
+      </h1>
+      <p class="hero-description" id="hero-description">
+        Dari perkebunan dataran tinggi Nusantara langsung ke cangkirmu. Nikmati aroma segar espresso, kreasi kopi susu aren gurih, hingga manual brew pilihan.
+      </p>
+      
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary">
+          <i class="bi bi-cup-hot"></i>
+          Pesan Menu Sekarang
+        </a>
+        <a href="#cerita" class="btn-outline-light">
+          <i class="bi bi-play-circle"></i>
+          Cerita Kedai Kami
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <h3>4.9★</h3>
+          <p>Rating Konsumen</p>
+        </div>
+        <div class="stat-item">
+          <h3>100%</h3>
+          <p>Biji Asli Lokal</p>
+        </div>
+        <div class="stat-item">
+          <h3>15 Mnt</h3>
+          <p>Rata-rata Siap Saji</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="container" style="position: relative; z-index: 5;">
+    <div class="features-strip">
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="bi bi-award-fill"></i></div>
+          <div class="feature-info">
+            <h4>Biji Pilihan Kurasi</h4>
+            <p>Grade specialty dari Gayo, Toraja, & Kintamani.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="bi bi-clock-history"></i></div>
+          <div class="feature-info">
+            <h4>Fresh Roasted</h4>
+            <p>Disangrai berkala menjaga aroma & cita rasa puncak.</p>
+          </div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+          <div class="feature-info">
+            <h4>Pesan Langsung di Web</h4>
+            <p>Pilih, bayar aman (QRIS/Transfer), langsung diproses.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Koleksi Cita Rasa</span>
+        <h2 class="section-title">Pilih Seduhan Favoritmu</h2>
+        <p class="section-subtitle">
+          Semua minuman dan kudapan dibuat fresh setiap pesanan masuk. Pilih menu, masukkan keranjang, dan nikmati kemudahan checkout instan.
+        </p>
+      </div>
+
+      <div class="category-tabs" id="category-tabs">
+      </div>
+      <div class="products-grid" id="products-grid">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="story-section" id="cerita">
+    <div class="story-overlay"></div>
+    <div class="container story-container">
+      <div class="story-content">
+        <span class="section-tag" style="color: var(--accent-amber);">Dedikasi Rasa</span>
+        <h2>Lebih Dari Sekadar Secangkir Kopi</h2>
+        <p>
+          Kopi Seduh Jiwa lahir dari kecintaan pada kekayaan kopi Nusantara dan mimpi memberdayakan petani lokal. Setiap cangkir yang Anda nikmati merupakan hasil dedikasi para petani di lereng pegunungan Indonesia dan sentuhan presisi barista kami.
+        </p>
+        <p>
+          Kami percaya waktu ngopi adalah jeda berharga di tengah padatnya hari. Baik bekerja santai, berbincang bersama sahabat, atau menikmati kesendirian yang menenangkan.
+        </p>
+
+        <div class="story-badges">
+          <div class="story-badge-item">
+            <strong>10+</strong>
+            <span>Varian Single Origin</span>
+          </div>
+          <div class="story-badge-item">
+            <strong>15.000+</strong>
+            <span>Cangkir Terseduh</span>
+          </div>
+          <div class="story-badge-item">
+            <strong>4.9 / 5.0</strong>
+            <span>Kepuasan Pelanggan</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="reviews-section" id="testimoni">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kata Mereka</span>
+        <h2 class="section-title">Cerita Dari Pelanggan Setia</h2>
+        <p class="section-subtitle">
+          Kepuasan dan kehangatan rasa yang dirasakan langsung oleh para penikmat seduhan kami.
+        </p>
+      </div>
+
+      <div class="reviews-grid" id="reviews-grid">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="cta-banner">
+    <div class="cta-overlay"></div>
+    <div class="container cta-inner">
+      <h2>Mulai Harimu Dengan Seduhan Terbaik</h2>
+      <p>
+        Dapatkan aroma kopi terbaik hari ini. Bisa dinikmati langsung di tempat (Dine In), bawa pulang (Take Away), atau dikirim ke lokasimu!
+      </p>
+      <a href="#menu" class="btn-primary">
+        <i class="bi bi-cart-check"></i>
+        Pesan Sekarang & Dapatkan Kesegarannya
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3 id="footer-shop-name">Kopi Seduh Jiwa</h3>
+        <p id="footer-shop-desc">Menghadirkan kehangatan cita rasa kopi asli tanah air yang disangrai dengan presisi dan diseduh sepenuh hati oleh barista lokal.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Jam Operasional</h4>
+        <ul>
+          <li id="footer-shop-hours"><i class="bi bi-clock me-2"></i> Setiap Hari: 08.00 - 23.00 WIB</li>
+          <li><i class="bi bi-geo-alt me-2"></i> <span id="footer-shop-address">Jl. Rinjani No. 24</span></li>
+          <li><i class="bi bi-whatsapp me-2"></i> <span id="footer-shop-phone">+62 812-3456-7890</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Jaminan Kenyamanan</h4>
+        <p style="font-size: 0.88rem; margin-bottom: 12px;">Pemesanan langsung via website diverifikasi otomatis dan diproses dalam antrean prioritas.</p>
+        <div style="display: flex; gap: 10px; font-size: 1.5rem; color: var(--accent-amber);">
+          <i class="bi bi-shield-check"></i>
+          <i class="bi bi-qr-code-scan"></i>
+          <i class="bi bi-cup-hot-fill"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Kopi Seduh Jiwa. Dibuat untuk kenyamanan penikmat kopi Nusantara.</p>
+    </div>
+  </footer>
+
+  <button class="floating-cart-btn" id="btn-floating-cart" style="display: none;">
+    <i class="bi bi-bag-fill"></i>
+    <span>Keranjang: <span id="float-cart-count">0</span> Item</span>
+    <span>|</span>
+    <span id="float-cart-subtotal">Rp 0</span>
+  </button>
+
+  <div class="cart-backdrop" id="cart-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="drawer-header">
+      <h3><i class="bi bi-bag-check"></i> Keranjang Pesanan</h3>
+      <button class="btn-close-drawer" id="btn-close-drawer" aria-label="Tutup Keranjang">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="drawer-body" id="cart-drawer-body">
+
+    </div>
+
+    <div class="drawer-footer" id="cart-drawer-footer" style="display: none;">
+      <div class="summary-row">
+        <span>Subtotal Menu</span>
+        <span id="drawer-subtotal">Rp 0</span>
+      </div>
+      <div class="summary-row">
+        <span>Pajak Resto (10%)</span>
+        <span id="drawer-tax">Rp 0</span>
+      </div>
+      <div class="summary-row total">
+        <span>Total Pembayaran</span>
+        <span id="drawer-grand-total">Rp 0</span>
+      </div>
+
+      <button class="btn-checkout-now" id="btn-proceed-checkout">
+        <span>Lanjut ke Form Checkout</span>
+        <i class="bi bi-arrow-right"></i>
+      </button>
+    </div>
+  </aside>
+
+  <div class="modal-backdrop" id="checkout-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="bi bi-receipt"></i> Selesaikan Pesanan</h3>
+        <button class="btn-close-drawer" id="btn-close-checkout" style="font-size: 1.2rem;">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form id="checkout-form">
+
+          <div class="form-group">
+            <label class="form-label">Pilih Tipe Pesanan:</label>
+            <div class="order-type-selector">
+              <div class="type-option active" data-type="dine-in">
+                <i class="bi bi-shop"></i>
+                Dine In (Di Kedai)
+              </div>
+              <div class="type-option" data-type="take-away">
+                <i class="bi bi-bag"></i>
+                Take Away
+              </div>
+              <div class="type-option" data-type="delivery">
+                <i class="bi bi-bicycle"></i>
+                Delivery Lokal
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="cust-name">Nama Pemesan <span style="color:red">*</span></label>
+            <input type="text" id="cust-name" class="form-control" placeholder="Contoh: Budi Santoso" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="cust-phone">Nomor WhatsApp <span style="color:red">*</span></label>
+            <input type="tel" id="cust-phone" class="form-control" placeholder="Contoh: 081234567890" required />
+            <small style="font-size: 0.75rem; color: var(--text-muted);">Untuk pengiriman nota & status pesanan.</small>
+          </div>
+
+          <div class="form-group" id="field-table-num">
+            <label class="form-label" for="cust-table">Nomor Meja</label>
+            <input type="text" id="cust-table" class="form-control" placeholder="Contoh: Meja 04 atau Area Luar" />
+          </div>
+
+          <div class="form-group" id="field-address" style="display: none;">
+            <label class="form-label" for="cust-address">Alamat Pengantaran</label>
+            <textarea id="cust-address" class="form-control" rows="2" placeholder="Nama jalan, nomor rumah, patokan..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="cust-notes">Catatan Tambahan (Opsional)</label>
+            <input type="text" id="cust-notes" class="form-control" placeholder="Contoh: Less sugar, extra ice, seduh jangan terlalu pahit..." />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Metode Pembayaran:</label>
+            <div class="payment-methods">
+              <div class="payment-card active" data-pay="qris">
+                <i class="bi bi-qr-code"></i>
+                QRIS Instan
+              </div>
+              <div class="payment-card" data-pay="transfer">
+                <i class="bi bi-bank"></i>
+                Transfer Bank
+              </div>
+              <div class="payment-card" data-pay="cash">
+                <i class="bi bi-cash-coin"></i>
+                Bayar di Kasir
+              </div>
+            </div>
+
+            <div class="payment-info-box" id="payment-info-box">
+              <p><strong>Scan QRIS Resmi Toko</strong></p>
+
+              <img id="checkout-qris-img" src="" alt="QRIS Kopi Seduh Jiwa" />
+              <p style="font-size: 0.78rem; color: var(--text-muted);">Mendukung GoPay, OVO, ShopeePay, DANA, BCA, Livin, dll.</p>
+            </div>
+          </div>
+
+          <div class="checkout-summary-box">
+            <div class="summary-row">
+              <span id="checkout-items-count">0 Menu Dipesan</span>
+              <span id="checkout-subtotal">Rp 0</span>
+            </div>
+            <div class="summary-row">
+              <span>Pajak Resto & Layanan (10%)</span>
+              <span id="checkout-tax">Rp 0</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total Tagihan:</span>
+              <span id="checkout-grand-total" style="color: var(--coffee-warm); font-size: 1.25rem;">Rp 0</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-checkout-now">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>Konfirmasi & Bayar Pesanan</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="success-modal">
+    <div class="modal-card">
+      <div class="modal-body success-card">
+        <div class="success-icon">
+          <i class="bi bi-check-lg"></i>
+        </div>
+        <h2>Pesanan Berhasil Diterima!</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">
+          Terima kasih! Barista kami sedang menyiapkan pesanan Anda dengan penuh ketelitian.
+        </p>
+        
+        <div class="order-badge-id" id="success-order-id">
+          NO. ORDER: #KSJ-98231
+        </div>
+
+        <div class="receipt-box" id="success-receipt-box">
+    
+        </div>
+
+        <div style="display: flex; gap: 12px; flex-direction: column;">
+          <a id="btn-send-whatsapp" href="#" target="_blank" class="btn-primary" style="justify-content: center; background: #25d366; border-color: #25d366;">
+            <i class="bi bi-whatsapp"></i>
+            <span>Kirim Bukti / Konfirmasi ke WhatsApp Kedai</span>
+          </a>
+
+          <button id="btn-new-order" class="btn-outline-light" style="color: var(--primary-dark); border-color: var(--card-border);">
+            <i class="bi bi-arrow-clockwise"></i>
+            Kembali ke Menu Utama
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
